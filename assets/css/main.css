@@ -1,0 +1,428 @@
+.header-navbar {
+    display: flex;
+    height: 100px;
+    background-color: rgba(0,0,0,0.12);
+    align-items: center;
+    padding: 0 65px;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-navbar__logo {
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-navbar__logo-img {
+    height: 38px;
+}
+
+.header-navbar__menu {
+    display: flex;
+    flex: 1;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.header-navbar__item {
+    list-style: none;
+}
+
+.header-navbar__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: 400;
+    padding: 25px 15px;
+    letter-spacing: 2px;
+    position: relative;
+
+}
+
+.header-navbar__link-item:hover {
+    background-color: #f9f9f9;
+}
+
+.head-navbar__link-list,
+.head-navbar__link-list-aside {
+    position: absolute;
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--white-color);
+    color: #9a9a9a;
+    top: 100%;
+    width: 192px;
+    font-weight: 300;
+    box-shadow: 0px 2px 5px #f1f1f1;
+    display: none;
+}
+
+.head-navbar__link-list-aside {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 25px;
+}
+
+.head-navbar__link-list-aside::before {
+    content: "";
+    width: 25px;
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: -25px;
+}
+
+.header-navbar__link-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-navbar__item--width-list:hover .head-navbar__link-list,
+.header-navbar__link-item--with-list:hover .head-navbar__link-list-aside {
+    display: block;
+}
+
+.header-navbar__link-item:last-child {
+    border-bottom: none;
+}
+
+.header-navbar__link-item-banner {
+    font-size: 1.2rem;
+    background-color: #f76570;
+    border-radius: 3px;
+    color: var(--white-color);
+    line-height: 1.2rem;
+    padding: 3px 4px;
+}
+
+.header-navbar__link-item-banner--best {
+    background-color: #14b9d5;
+}
+
+.header-navbar__link-item-banner--new {
+    background-color: #1bbc9b;
+}
+
+.header-navbar__button-book {
+    border-radius: 20px;
+    border-style: none;
+    background-color: #ba71da;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    padding: 10px 16px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.header-navbar__list {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.header-navbar__list-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.header-option {
+    position: fixed;
+    width: 370px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white-color);
+    z-index: 1;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    transition: transform ease-in 0.6s;
+}
+
+.header-option.open {
+    transform: translateX(0);
+}
+
+.header-option__heading-first {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.header-option__head-title-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--black-color);
+    margin: 15px 0 40px;
+    font-weight: 700;
+}
+
+.header-option__head-title-second:after {
+    content: "";
+    width: 38%;
+    height: 4px;
+    background-color: #ffd105;
+    position: absolute;
+    bottom: 2px;
+    z-index: -1;
+}
+
+.header-option__head-title-second--modify:after {
+    background-color: #f3a46b;
+    width: 32%;
+}
+
+.header-option__head-title-first {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+}
+
+.header-option__heading-second {
+    position: relative;
+}
+
+.header-option__close {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.header-option__tour {
+    flex-direction: column;
+}
+
+.header-option__tour-item {
+    display: flex;;
+    margin: 25px 0 15px 46px;
+    position: relative;
+}
+
+.header-option__tour-img {
+    width: 100px;
+    height: 100px;
+}
+
+.header-option__tour-info {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.header-option__tour-info-long-name {
+    position: absolute;
+    top: 0;
+    left: 32.5%;
+    height: 100%;
+}
+
+.header-option__tour-name {
+    font-size: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.header-option__tour-location {
+    font-size: 15px;
+    padding-top: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.header-option__tour-pin {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 2px;
+}
+
+.header-option__tour-location-name {
+    letter-spacing: 2px;
+}
+
+.header-option__tour-price {
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin: auto 0 0 0;
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+
+.header-option__tour-price-hongkong {
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+
+.header-option__tour-price-sanfrancisco {
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+
+.header-option__tour-price-tuscany {
+    background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+}
+
+.header-option__tour-price-amsterdam {
+    background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+}
+
+.header-option__tour-price-phuket {
+    background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+}
+
+.header-option__destination {
+    margin-top: 30px;
+    position: relative;
+}
+
+.header-option__destination:hover .header-option__packages-detail {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.header-option__destination-img {
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.header-option__destination-img-gradient {
+    margin: 0 auto;
+    height: 262px;
+    width: 262px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+}
+
+.header-option__destination-generality {
+
+}
+
+.header-option__destination-generality-logo {
+    height: 35px;
+    position: absolute;
+    top: 0;
+    margin: 30px;
+}
+
+.header-option__destination-generality-info {
+    position: absolute;
+    bottom: 0;
+    color: var(--white-color);
+    margin: 30px;
+}
+
+.header-option__destination-generality-region {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-option__destination-generality-package {
+    font-weight: 200;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.header-option__packages-detail {
+    width: 262px;
+    height: 262px;
+    margin-left: 46px;
+    background-color: var(--blue-color);
+    position: absolute;
+    top: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.header-option__packages-detail-container {
+    width: 100%;
+    text-align: center;
+}
+
+.header-option__packages-heading {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.header-option__packages-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.header-option__packages-item {
+    padding: 6px;
+}
+
+.header-option__packages-link {
+    width: 100%;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.header-option__packages-link,
+.header-optioon__packages-view-btn,
+.header-optioon__packages-view-btn-link {
+    text-decoration: none;
+}
+
+.header-optioon__packages-view-btn-link  {
+    padding: 4px 15px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    background-color: var(--white-color);
+    color: var(--blue-color);
+}
+
+
+.slider-image {
+    position: absolute;
+    background: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg) no-repeat top center;
+    background-size: cover;
+    height: 150%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    top: -32%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /* box-shadow: inset 0em -1em gold; */
+}
+
+.slider {
+    position: relative;
+    height: 900px;
+}
