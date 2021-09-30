@@ -17,6 +17,7 @@
 }
 
 html {
+    height: 2000px;
     font-size: 62.5%; /*10px*/
     line-height: 1.6rem;
     font-family: 'Poppins', sans-serif;
