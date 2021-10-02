@@ -296,7 +296,7 @@
 
 .header-option__destination:hover .header-option__packages-detail {
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
 }
 
 .header-option__destination-img {
@@ -357,8 +357,10 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
 }
 
 .header-option__packages-detail-container {
@@ -391,12 +393,12 @@
 }
 
 .header-option__packages-link,
-.header-optioon__packages-view-btn,
-.header-optioon__packages-view-btn-link {
+.header-option__packages-view-btn,
+.header-option__packages-view-btn-link {
     text-decoration: none;
 }
 
-.header-optioon__packages-view-btn-link  {
+.header-option__packages-view-btn-link  {
     padding: 4px 15px;
     border-radius: 20px;
     font-size: 1.4rem;
@@ -547,4 +549,721 @@
     position: relative;
     top: -24px;
     background-color: #fff;
+    z-index: 0;
+}
+
+.app-container-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px 0 20px;
+}
+
+.app-container-heading-upper {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+}
+
+.app-container-heading-lower {
+    font-size: 3.6rem;
+    color: var(--black-color);
+    line-height: 3.6rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.app-container-heading-lower-underline {
+    position: relative;
+}
+
+.app-container-heading-lower-underline:after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #1bbc9b;
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    z-index: -1;
+}
+
+
+.app-container__destination {
+    position: relative;
+    margin-top: 25px;
+}
+
+.app-container__destination-img-gradient {
+    margin: 0 auto;
+    height: 370px;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+}
+
+.app-container__destination-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.app-container__destination-generality {
+}
+
+.app-container__destination-generality-logo {
+    position: absolute;
+    top: 0;
+    height: 35px;
+    width: 35px;
+    margin: 30px;
+}
+
+.app-container__destination-generality-info {
+    position: absolute;
+    bottom: 0;
+    color: var(--white-color);
+    margin: 30px;
+}
+
+.app-container__destination-generality-region {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.app-container__destination-generality-package {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.app-container__destination:hover .app-container__packages-detail {
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.app-container__packages-detail {
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue-color);
+    position: absolute;
+    top: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+}
+
+.app-container__packages-detail-container {
+    width: 100%;
+    text-align: center;
+}
+
+.app-container__packages-heading {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.app-container__packages-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.app-container__packages-item {
+    padding: 6px;
+}
+
+.app-container__packages-link {
+    width: 100%;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.app-container__packages-view-btn-link {
+    text-decoration: none;
+    padding: 4px 15px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    background-color: var(--white-color);
+    color: var(--blue-color);
+}
+
+
+.app-container__parallax-one {
+    height: 236px;
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-search-2.jpg?id=1538);
+    background-position: center;
+    margin-top: 50px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.app-container__parallax-one-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.app-container__parallax-one-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-right: 138px;
+}
+
+.app-container__parallax-one-lower-underline {
+    position: relative;
+}
+
+.app-container__parallax-one-lower-underline:after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: #f76570;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    z-index: -1;
+}
+
+.app-container__parallax-one-view-btn {
+    text-decoration: none;
+    color: #f76570;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 15px 35px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    background-color: var(--white-color);
+}
+
+.app-tour-discount {
+    display: flex;
+    width: 100%;
+    margin: 78px 20px 78px 0;
+}
+
+.app-tour-discount__review {
+    width: 100%;
+}
+
+.app-tour-discount__detail {
+    width: 35%;
+    padding-right: 80px
+}
+
+.app-tour-discount__heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-tour-discount__heading-upper {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+}
+
+.app-tour-discount__heading-lower {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    font-weight: bold;
+    color: var(--black-color);
+    margin: 15px 0;
+}
+
+.app-tour-discount__heading-lower-underline {
+    position: relative;
+}
+
+.app-tour-discount__heading-lower-underline:after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: #14b9d5;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    z-index: -1;
+}
+
+.app-tour-discount__content {
+
+}
+
+.app-tour-discount__content-info {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    margin: 20px 0px;
+}
+
+.app-tour-discount__price {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--black-color);
+    margin: 30px 0;
+}
+
+.app-tour-discount__price-old {
+    color: var(--text-color);
+    text-decoration: line-through;
+}
+
+.app-tour-discount__price-current {
+}
+
+.app-tour-discount__price-for-one {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+
+.app-tour-discount__book {
+    margin-top: 50px;
+}
+.app-tour-discount__book-btn {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding: 10px 35px;
+    border-radius: 30px;
+    background-color: #1bbc9b;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.app-tour-discount__review {
+    width: 65%;
+    position: relative;
+}
+
+.app-tour-discount__review-tour {
+    height: 412px;
+}   
+
+.app-tour-discount__review-img {
+    width: 100%;
+    height: 100%;
+}
+
+.app-tour-discount__review-slider-sign {
+    position: absolute;
+    height: 10px;
+    width: 222px;
+    background-color: transparent;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.app-tour-discount__review-slider-sign-item {
+    background-color: var(--white-color);
+    opacity: 0.5;
+    text-align: center;
+    height: 3px;
+    width: 60px;
+    left: 50%;
+    transform: translateX(calc(-50% + 26px));
+    cursor: pointer;
+}
+
+.app-tour-discount__review-slider-sign-item-active {
+    opacity: 1;
+}
+
+.app-tour-discount__review-countdown {
+    background-color: #14b9d5;
+    height: 120px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app-tour-discount__review-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white-color);
+    position: relative;
+    padding: 15px;
+}
+
+.app-tour-discount__review-item:after {
+    content: "/";
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%);
+    font-size: 4rem;
+    color: #000;
+    opacity: 0.05;
+}
+
+.app-tour-discount__review-item-last:after {
+    display: none;
+
+}
+
+.app-tour-discount__review-times {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+}
+
+.app-tour-discount__review-times-units {
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+
+.app-types-tourism {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+}
+
+.app-types-tourism__item {
+    display: flex;
+}
+
+.app-types-tourism__item-img {
+    width: 50px;
+    height: 50px;
+}
+
+.app-types-tourism-content {
+    flex: 1;
+    margin-left: 15px;
+    padding-right: 20px;
+}
+
+.app-types-tourism__heading {
+    margin-top: 4px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+.app-types-tourism__info {
+    margin: 25px 0;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--text-color);
+}
+
+.app-types-tourism-content_view-more {
+    font-size: 1.4rem;
+    color: #14b9d5;
+    text-decoration: none;
+}
+
+.app-container__parallax-twin {
+    display: flex;
+    margin-top: 84px;
+}
+
+.app-container__parallax-twin__first,
+.app-container__parallax-twin__second {
+    width: 50%;
+    height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-container__parallax-twin__first {
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584);
+}
+
+.app-container__parallax-twin__second {
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585);
+}
+
+.app-container__parallax-twin__item {
+    position: absolute;
+}
+.app-container__parallax-twin__content {
+    text-align: center;
+}
+
+.app-container__parallax-twin__content-heading-upper {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--white-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.app-container__parallax-twin__content-heading-lower {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    color: var(--white-color);
+    margin: 15px 0 48px;
+}
+
+.app-container__parallax-twin__content-link {
+    padding: 15px 35px;
+    font-size: 1.4rem;
+    background-color: var(--white-color);
+    border-radius: 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.app-container__parallax-twin__content-link-color-first {
+    color: #f3a46b;
+}
+
+.app-container__parallax-twin__content-link-color-second {
+    color: #1bbc9b
+}
+
+.app-packages-heading {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.app-packages-heading__upper {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.app-packages-heading__lower {
+    margin-top: 20px;
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+.app-packages-heading__lower-underline {
+    position: relative;
+}
+
+.app-packages-heading__lower-underline:after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: #1bbc9b;
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    z-index: -1;
+}
+
+.app-packages-details__container {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+}
+
+.app-packages-details__container-heading {
+    position: relative;
+}
+
+.app-packages-details__container-heading-sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    margin: 20px;
+    padding: 2px 12px 3px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.app-packages-details__container-heading-img {
+    width: 100%;
+    height: 232px;
+}
+
+.app-packages-details__container-heading-logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: calc(100% - 5px);
+    right: 0;
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    transform: translateY(-50%);
+    margin-right: 20px;
+}
+
+.app-packages-details__container-heading-icon {
+    height: 26px;
+    width: 26px;
+}
+
+.app-packages-details__container-heading-logo--hongkong-color {
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+
+.app-packages-details__container-heading-logo--francisco-color {
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+
+
+.app-packages-details__container-body {
+
+}
+
+.app-packages-details__container-body__heading {
+    padding: 32px;
+}
+
+.app-packages-details__container-body__heading-name {
+    color: var(--black-color);
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.app-packages-details__container-body__heading-location {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    display: flex;
+    align-items: baseline;
+    color: var(--text-color);
+}
+
+.app-packages-details__container-body__heading-location-img {
+    width: 14px;
+    height: 14px;
+}
+
+.app-packages-details__container-body__heading-location-name {
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+
+.app-packages-details__container-body__price {
+    margin: 0 32px;
+    padding: 15px 0;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.app-packages-details__container-body__price__type-travel {
+    font-weight: 400;
+    color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.app-packages-details__container-body__price__type-travel-lower-container {
+    margin-top: 4px;
+}
+
+.app-packages-details__container-body__price__type-travel-upper,
+.app-packages-details__container-body__price__type-travel-lower {
+    letter-spacing: 2px;
+}
+
+.app-packages-details__container-body__price__type-travel-lower-quantity {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    background-color: #ffd205;
+    color: var(--white-color);
+    padding: 0 8px;
+    border-radius: 30px;
+    transform: translateX(50%);
+}
+
+.app-packages-details__container-body__price__type-travel-lower-quantity--hongkong-color {
+    background-color: #f76570;
+}
+
+.app-packages-details__container-body__price__type-travel-lower-quantity--francisco-color {
+    background-color: #ba71da;
+}
+
+.app-packages-details__container-body__price-old {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-decoration: line-through;
+    margin-right: 6px;
+}
+
+.app-packages-details__container-body__price-current {
+    font-size: 2.5rem;
+    color: var(--black-color);
+}
+
+.app-packages-details__container-body__content {
+    padding: 20px 32px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 3rem;
+    letter-spacing: 1px;
+}
+
+.app-packages-details__container-body__btn {
+    margin: 20px 0 40px 32px;
+}
+
+.app-packages-details__container-body__btn-link {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #ffd205;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.app-packages-details__container-body__btn-link--hongkong-color {
+    background-color: #f76570;
+}
+
+.app-packages-details__container-body__btn-link--francisco-color {
+    background-color: #ba71da;
 }
