@@ -1,3 +1,4 @@
+
 .header-navbar {
     display: flex;
     height: 100px;
@@ -141,7 +142,7 @@
     right: 0;
     bottom: 0;
     background-color: var(--white-color);
-    z-index: 1;
+    z-index: 2;
     overflow-y: scroll;
     transform: translateX(100%);
     transition: transform ease-in 0.6s;
@@ -564,6 +565,7 @@
     font-size: 1.4rem;
     line-height: 1.4rem;
     color: var(--text-color);
+    letter-spacing: 2px;
 }
 
 .app-container-heading-lower {
@@ -1266,4 +1268,233 @@
 
 .app-packages-details__container-body__btn-link--francisco-color {
     background-color: #ba71da;
+}
+
+.app-footer {
+    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602);
+    height: 630px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+}
+
+.app-footer__heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 80px 0 60px;
+}
+
+.app-footer__heading-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+.app-footer__heading-text-upper {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.app-footer__heading-text-lower {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    color: var(--black-color);
+}
+
+.app-footer__heading-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 100px 0 60px;
+}
+
+.app-footer__heading-input-box {
+    outline: none;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 30px;
+    line-height: 2rem;
+}
+
+.app-footer__heading-send {
+    margin-left: 30px;
+}
+
+.app-footer__heading-send-btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: #14b9d5;
+    padding: 12px 20px;
+    border-radius: 30px;
+    letter-spacing: 3px;
+    color: var(--white-color);
+}
+
+.app-footer-container {
+    background-color: var(--white-color);
+    display: flex;
+}
+
+.app-footer-container-left {
+    padding: 45px;
+}
+
+.app-footer-container-left__logo,
+.app-footer-container-left__content,
+.app-footer-container-left__social {
+}
+
+.app-footer-container-left__logo {
+    height: 36px;
+}
+
+.app-footer-container-left__content {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    font-weight: 400;
+    margin: 40px 0 20px;
+}
+
+.app-footer-container-left__content-underline {
+    text-decoration: underline;
+}
+
+.app-footer-container-left__social {
+    display: flex;
+    width: 150px;
+    margin-left: -10px;
+}
+
+.app-footer-container-left__social-item {
+    padding: 10px;
+}
+
+.app-footer-container-left__social-icon {
+    height: 22px;
+    width: 22px;
+}
+
+.app-footer-container-right {
+    padding: 62px 45px 45px 0;
+    display: flex;
+}
+
+.app-footer-container-right__heading {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--black-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.app-footer-container-right__list {
+    list-style: none;
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+.app-footer-container-right__item {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding: 6px 0;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.app-footer-container-right__item-icon {
+    font-size: 0.9rem;
+    color: #d4d1d1;
+    margin-right: 4px;
+}
+
+
+.app-footer-container__end {
+    width: 100%;
+    background-color: #14b9d5;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-footer-container__end-text {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white-color);
+    letter-spacing: 1px;
+}
+
+.app-float-item {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 25px;
+    z-index: 1;
+}
+
+.app-float-item__container {
+    position: relative;
+}
+
+.app-float-item__buy {
+    position: relative;
+    font-size: 0.8rem;
+    width: 56px;
+    color: var(--white-color);
+    background-color: #f76570;
+    padding: 0 5px;
+    top: 16px;
+    letter-spacing: 1px;
+    left: 8px;
+}
+
+.app-float-item__price {
+    display: flex;
+    padding: 23px 18px;
+    background-color: var(--black-color);
+    align-items: baseline;
+    border-radius: 50%;
+}
+
+.app-float-item__dollar-icon {
+    font-size: 0.8rem;
+    color: var(--white-color);
+    position: absolute;
+    top: -9px;
+    left: -5px;
+}
+
+.app-float-item__number {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.app-float-item__icon {
+    position: absolute;
+    bottom: 2px;
+    right: 75%;
+    background-color: var(--black-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.app-float-item__icon-link {
+    display: flex;
+    align-items: baseline;
+}
+
+.app-float-item__icon-img {
+    height: 15px;
+    width: 15px;
 }
